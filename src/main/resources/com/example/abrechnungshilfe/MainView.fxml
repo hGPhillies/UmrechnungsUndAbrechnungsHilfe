@@ -3,55 +3,55 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane fx:controller="com.example.abrechnungshilfe.MainViewController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="579.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <VBox layoutY="2.0" prefHeight="561.0" prefWidth="200.0" spacing="10.0">
          <children>
-            <Label text="2 Eur" />
-            <TextField promptText="Anzahl der Münzen" />
-            <Label text="1 Eur" />
-            <TextField promptText="Anzahl der Münzen" />
-            <Label text="50 cent" />
-            <TextField promptText="Anzahl der Münzen" />
-            <Label text="20 cent" />
-            <TextField promptText="Anzahl der Münzen" />
-            <Label text="10 cent" />
-            <TextField promptText="Anzahl der Münzen" />
-            <Label text="5 cent" />
-            <TextField promptText="Anzahl der Münzen" />
-            <Label text="2 cent" />
-            <TextField promptText="Anzahl der Münzen" />
-            <Label text="1 cent" />
-            <TextField promptText="Anzahl der Münzen" />
-            <TextArea prefHeight="60.0" prefWidth="200.0" />
+            <Label fx:id="L_2Euro" text="2 Euro" />
+            <TextField fx:id="TF_2Euro" promptText="Anzahl der Münzen" />
+            <Label fx:id="L_1Euro" text="1 Euro" />
+            <TextField fx:id="TF_1Euro" promptText="Anzahl der Münzen" />
+            <Label fx:id="L_50Cent" text="50 cent" />
+            <TextField fx:id="TF_50Cent" promptText="Anzahl der Münzen" />
+            <Label fx:id="L_20Cent" text="20 cent" />
+            <TextField fx:id="TF_20Cent" promptText="Anzahl der Münzen" />
+            <Label fx:id="L_10Cent" text="10 cent" />
+            <TextField fx:id="TF_10Cent" promptText="Anzahl der Münzen" />
+            <Label fx:id="L_5Cent" text="5 cent" />
+            <TextField fx:id="TF_5Cent" promptText="Anzahl der Münzen" />
+            <Label fx:id="L_2Cent" text="2 cent" />
+            <TextField fx:id="TF_2Cent" promptText="Anzahl der Münzen" />
+            <Label fx:id="L_1Cent" text="1 cent" />
+            <TextField fx:id="TF_1Cent" promptText="Anzahl der Münzen" />
+            <TextArea fx:id="TA_EuroCoins" prefHeight="60.0" prefWidth="200.0" />
          </children>
       </VBox>
-      <VBox layoutX="800.0" layoutY="2.0" prefHeight="561.0" prefWidth="200.0" spacing="10.0">
+      <VBox layoutX="813.0" layoutY="2.0" prefHeight="561.0" prefWidth="200.0" spacing="10.0">
          <children>
-            <Label text="20 kr" />
-            <TextField promptText="Anzahl der Münzen" />
-            <Label text="10 kr" />
-            <TextField promptText="Anzahl der Münzen" />
-            <Label text="5 kr" />
-            <TextField promptText="Anzahl der Münzen" />
-            <Label text="2 kr" />
-            <TextField promptText="Anzahl der Münzen" />
-            <Label text="1 kr" />
-            <TextField promptText="Anzahl der Münzen" />
-            <Label text="50 öre" />
-            <TextField promptText="Anzahl der Münzen" />
-            <TextArea prefHeight="60.0" prefWidth="200.0" />
+            <Label fx:id="L_20Kr" text="20 kr" />
+            <TextField fx:id="TF_20Kr" promptText="Anzahl der Münzen" />
+            <Label fx:id="L_10Kr" text="10 kr" />
+            <TextField fx:id="TF_10Kr" promptText="Anzahl der Münzen" />
+            <Label fx:id="L_5Kr" text="5 kr" />
+            <TextField fx:id="TF_5Kr" promptText="Anzahl der Münzen" />
+            <Label fx:id="L_2Kr" text="2 kr" />
+            <TextField fx:id="TF_2Kr" promptText="Anzahl der Münzen" />
+            <Label fx:id="L_1Kr" text="1 kr" />
+            <TextField fx:id="TF_1Kr" promptText="Anzahl der Münzen" />
+            <Label fx:id="L_50Öre" text="50 öre" />
+            <TextField fx:id="TF_50Öre" promptText="Anzahl der Münzen" />
+            <TextArea fx:id="TA_DanishKrones" prefHeight="60.0" prefWidth="200.0" />
          </children>
       </VBox>
       <HBox layoutX="200.0" layoutY="2.0" prefHeight="561.0" prefWidth="600.0">
          <children>
-            <VBox prefHeight="200.0" prefWidth="200.0" />
-            <VBox prefHeight="200.0" prefWidth="200.0">
+            <VBox prefHeight="561.0" prefWidth="200.0" />
+            <VBox prefHeight="561.0" prefWidth="200.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="50.0" prefWidth="200.0" text="Münzgeld Ausrechnen" />
+                  <Button fx:id="CoinCalcButton" mnemonicParsing="false" onAction="#calcCoin" prefHeight="50.0" prefWidth="200.0" text="Münzgeld Ausrechnen" />
                </children>
             </VBox>
-            <VBox prefHeight="200.0" prefWidth="200.0" />
+            <VBox prefHeight="561.0" prefWidth="200.0" />
          </children>
       </HBox>
 
